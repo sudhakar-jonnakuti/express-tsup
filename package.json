@@ -1,0 +1,31 @@
+{
+  "name": "express-tsup",
+  "version": "1.0.0",
+  "description": "express + tsup",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "dev:build": "tsup",
+    "dev:start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Sudhakar Jonnakuti",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-terminator": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.0",
+    "module-alias": "^2.2.3",
+    "nodemon": "^2.0.22",
+    "tsconfig-paths": "^4.2.0",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6"
+  },
+  "_moduleAliases": {
+    "@module": "dist/module",
+    "@route": "dist/route"
+  }
+}
